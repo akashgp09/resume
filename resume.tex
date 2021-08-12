@@ -1,0 +1,230 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\color{NavyBlue}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{NavyBlue}\titlerule \vspace{-5pt}]
+
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ 
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \color{NavyBlue} \textbf {Akash Gupta}} \\ \vspace{1pt}
+    \href{mailto:akashgp9@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{akashgp9@gmail.com}} ~ 
+    \href{https://github.com/akashgp09}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/akashgp09}} ~
+    \href{https://linkedin.com/in/akashgp09}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/akashgp09}} ~
+    \small \raisebox{-0.1\height}\faPhone +91 9101225535 
+
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Kalinga Institute of Industrial Technology}{June 2019 -- July 2023}
+      {Bachelor of Technology in Information Technology CGPA: 9.38/10}{Bhubaneswar, Odisha} 
+       \item Relevant Coursework: Data Structures, Algorithms, Operating Systems, DBMS and Computer Networks.
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {\href{https://summerofcode.withgoogle.com/projects/\#5380240265707520}{Google Summer of Code}}{May 2021 -- August 2021}
+      {Student Developer - MetaBrainz Foundation Inc}{Remote}
+      \resumeItemListStart
+        \resumeItem{Developed a new feature  "Series" entity for  \href{https://bookbrainz.org/}{\textbf{BookBrainz}} used by 2000+ users and added support in BookBrainz \href{https://api.test.bookbrainz.org/1/docs/}{\textbf{API}}.}
+        \resumeItem{Designed and created the database schema, Implemented the corresponding ORM models and functions with tests.}
+        \resumeItem{Created the web server routes and frontend components.}
+        \resumeItem{Increased coverage by 5 percent by adding unit and integration tests using Chai and Mocha framework.}
+        \resumeItem{Worked on technologies such as React, Redux, Typescript, Nodejs, PostgreSQL, Bookshelf.js(ORM), and ElasticSearch.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {\href{https://www.linkedin.com/company/dsckiit/posts/}{Google Developer Students Club, KIIT}}{August 2020 -- Present}
+      {Full Stack Web Developer}{Bhubaneswar, Odisha}
+      \resumeItemListStart
+        \resumeItem{Rebuilt the website from scratch for improved performance and added new features.}
+        \resumeItem{Developed the participant web portal for \href{https://dsc-asjx.vercel.app/}{\textbf{ASJX}} - an online hackathon. Integrated Devfolio SDK script for registrations, logging and submissions.}
+        \resumeItem{Organized KIIT University's biggest android hackathon.}
+        \resumeItem{Worked with different languages, platforms, frameworks, and content management systems such as TypeScript, JavaScript, Next.js, React, Strapi, Material-UI, and Vercel.}
+    \resumeItemListEnd
+ 
+    
+    \resumeSubheading
+      {\href{https://www.elastic.co/community/contributor}{Elastic Contributor Program}}{Feb 2021 -- Present}
+      {Contributor}{Remote}
+      \resumeItemListStart
+        \resumeItem{Helped in the development of  \href{https://eui.elastic.co/}{\textbf{Elastic UI Framework}}, which has over 20k+ downloads per week on npm.}
+        \resumeItem{My work includes fixing bugs, adding features, improving documentation, and writing tests.}
+        \resumeItem{Automated accessibility testing using AXE and debugged several issues.}
+        \resumeItem{Worked with Typescript, React, Jest and a11y.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+\vspace{-16pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/akashgp09/coding-platform}{Coding Platform}} $|$ \emph{Javascript, React, MongoDB, Nodejs, Express}}{August 2020}
+          \resumeItemListStart
+            \resumeItem{Developed a coding portal where people can practice their coding skills.}
+            \resumeItem{Integrated a compiler that supports code execution for C, C++, Python, and Java.}
+            \resumeItem{Integrated CodeMirror, a versatile text editor for editing code.}
+            \resumeItem{Executes code against test cases (default or custom) to measure the correctness of the user's code.}
+            \resumeItem{Used Google Oauth authentication strategy for sign-in/sign-up.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+      \resumeProjectHeading
+          {\textbf{\href{https://github.com/akashgp09/Jammming}{Jammming}} $|$ \emph{React, Spotify API}}{May 2020}
+          \resumeItemListStart
+            \resumeItem{A web application built with React that allows to search the Spotify library, create a custom playlist, and then save the playlist to their Spotify accounts.}
+          \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: JavaScript, C, C++, Python, SQL} \\
+     \textbf{Development}{: React, TypeScript, Next.js, Node.js, Express, BookShelf.js(ORM), Chai, Mocha} \\
+     \textbf{Database}{: MySQL, PostgreSQL, MongoDB} \\
+     \textbf{Others}{: Linux, Git, Software Testing, API Development, Problem Solving} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+
+%-----------INVOLVEMENT---------------
+\section{Additional}
+
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Open Source Contributions:}{: Contributed to Layer5, Meshery, Open Collective, Dev Protocol.} \\
+     \textbf{Elastic Contributor Program}{: Currently    \textbf{ranked 4} in  East Asia, South Asia, Southeast Asia, and Oceania region leaderboard.} \\
+     \textbf{Writing}{: Published multiple technical articles on \href{https://akashgp09.medium.com/}{\textbf{Medium}}.} \\
+    }}
+ \end{itemize}
+
+\end{document}
